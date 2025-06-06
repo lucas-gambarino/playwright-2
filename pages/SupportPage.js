@@ -77,6 +77,10 @@ class SupportPage extends BasePage {
     // Wait for message to appear in chat
     await this.page.waitForSelector(`text="${message}"`);
   }
+
+  async isChatVisible() {
+    return await this.isVisible(SELECTORS.CHAT_TEXTAREA);
+  }
 }
 
 module.exports = SupportPage; 

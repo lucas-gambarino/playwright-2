@@ -1,11 +1,11 @@
 const users = {
     defaultUser: {
-        username: 'test@fake.address.com',
-        password: 'Passw0rd'
+        username: process.env.DEFAULT_USER_USERNAME,
+        password: process.env.DEFAULT_USER_PASSWORD
     },
     windowsAuth: {
-        username: 'marc',
-        password: 'regishannah1956'
+        username: process.env.WINDOWS_AUTH_USERNAME,
+        password: process.env.WINDOWS_AUTH_PASSWORD
     }
 };
 

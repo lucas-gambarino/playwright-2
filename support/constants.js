@@ -16,18 +16,18 @@ const SELECTORS = {
 
 // Login credentials
 const CREDENTIALS = {
-  USERNAME: 'marc',
-  PASSWORD: 'regishannah1956'
+  USERNAME: process.env.WINDOWS_AUTH_USERNAME,
+  PASSWORD: process.env.WINDOWS_AUTH_PASSWORD
 };
 
 const CREDENTIALS_FIRST_LOGIN = {
-  USERNAME: 'test@fake.address.com',
-  PASSWORD: 'Passw0rd'
+  USERNAME: process.env.DEFAULT_USER_USERNAME,
+  PASSWORD: process.env.DEFAULT_USER_PASSWORD
 };
 
 const CREDENTIALS_SECOND_LOGIN = {
-  USERNAME: '2fa_prod_1@telusinternal.com',
-  PASSWORD: 'Vader_qa1'
+  USERNAME: process.env.DEFAULT_USER_USERNAME_LOGIN_2,
+  PASSWORD: process.env.DEFAULT_USER_PASSWORD_LOGIN_2
 };
 
 // Chat messages
